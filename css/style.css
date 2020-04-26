@@ -71,59 +71,66 @@ footer {
 	grid-template-columns: 1fr 7fr 1fr;
 }
 
-.header ul {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-}
+/* Верхнее меню, начало*/
 
-.header li:hover {
-	background-color: #7399AD;
-	border-radius: 0.2em;
-}
-
-.header li:active {
-	background-color: #688A9C;
-}
-
-li a {
+.top-menu {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin: 0;
+	padding: 0;
 	height: 60px;
-	color: #28536B;
-	user-select: none; 
-	text-decoration: none;
+	background-color: #7ea8be;
+}
+
+.top-menu__item {
+	flex: 1 0;
+	position: relative;
+	padding: 0.2em 0;
+}
+
+
+
+.top-menu__link {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 600;
+	color: #28536b;
+	text-decoration: none;
 }
 
-.sub-menu {
-	display: none;
-	background-color: #7EA8BE;
-	border-radius: 0em 0em 0.2em 0.2em;
-	margin-left: 10px;
+.top-menu__link:hover {
+	background-color: #7198ae;
+	box-shadow: 0 0 0.5em 0 rgba(1,25,54,0.5);
+	transition: background-color 0.2s linear;
+	border-radius: 0.3em;
+	margin: 0 0.2em;
 }
 
-.sub-menu a {
-	padding: 0px 20px 0px 20px;
-	border-radius: 0.2em;
-	margin: 4px;
-	
-}
-
-#vhod:hover > .sub-menu {
-	display: block;
+.top-menu__sub-item {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0 0 0.4em 0.4em;
 	position: absolute;
-	width: auto;
+	top: 60px;
+	height: 120px;
+	width: 100%;
+	align-content: center;
+	background-color: #7ea8be;
 }
 
-.sub-menu a:hover {
-	background-color: #7399AD;
+.top-menu__item:hover > .top-menu__sub-item_transition_scaleY {
+	transition: transform 0.5s ease;
+	transform: scaleY(1);
 }
 
-.sub-menu a:active {
-	background-color: #688A9C;
+.top-menu__sub-item_transition_scaleY {
+	transform: scaleY(0);
+	transform-origin: top;
 }
+
+/* Верхнее меню, конец */
 
 .header form {
 	display: grid;
@@ -293,7 +300,16 @@ footer p {
 	background-color: #688A9C;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:935px) {
+	.top-menu__sub-item {
+		width: auto;
+	}
+	.top-menu__link {
+		padding: 0 0.5em;
+	}
+}
+
+@media screen and (max-width:812px) {
 	.conteiner {
 		display: grid;
 		background-color: #FCF9EF;
@@ -318,7 +334,12 @@ footer p {
 	.slider {
 		display: none;
 	}
-	
+	.top-menu__sub-item {
+		width: auto;
+	}
+	.top-menu__link {
+		padding: 0 0.5em;
+	}
 }
 @media screen and (max-width:650px) {
 	.conteiner {

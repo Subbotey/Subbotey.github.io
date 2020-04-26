@@ -1,41 +1,52 @@
 <!doctype html>
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta name="discription" content="Страница сайта с адаптивной версткой!">
-	<meta name="keywords" content="Адаптивная верстка, grid">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
 	<meta property="og:title" content="MarsTerraforming">
 	<meta property="og:site_name" content="MarsTerraforming.com">
 	<meta property="og:url" content="https://subbotey.github.io">
 	<meta property="og:description" content="Команда добровольцев, планирующих преобразить Красную планету.">
 	<meta property="og:image" content="https://subbotey.github.io/img/og.jpg">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="./img/astronaut.svg" sizes="any" type="image/svg+xml">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="discription" content="Страница сайта с адаптивной версткой">
+<link rel="icon" href="img/astronaut.svg" sizes="any" type="image/svg+xml">
+	<meta name="keywords" content="Адаптивная верстка, grid">
 <title>Главная страница адаптивного сайта</title>
 </head>
 <body>
 	<div class="conteiner">
 		<div class="header">
 			<nav>
-				<a id="logo" href="#"></a>
-				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Заявка</a></li>
-					<li><a href="#">Статьи</a></li>
-					<li id="vhod">
-						<a href="#">Войти</a>
-						<div class="sub-menu">
-							<div><a href="#avtorization">Авторизация</a></div>
-							<div><a href="#registration">Регистрация</a></div>
+				<a id="logo" href="./index.html"></a>
+				<div class="top-menu">
+					<div class="top-menu__item">
+						<a href="#" class="top-menu__link">Главная</a>
+					</div>
+					<div class="top-menu__item">
+						<a href="#" class="top-menu__link">Заявка</a>
+					</div>
+					<div class="top-menu__item">
+						<a href="#" class="top-menu__link">Статьи</a>
+					</div>
+					<div class="top-menu__item">
+						<a href="#" class="top-menu__link">Вход</a>
+						<div class="top-menu__sub-item top-menu__sub-item_transition_scaleY">
+							<div class="top-menu__item">
+								<a href="#avtorization" class="top-menu__link">Авторизация</a>
+							</div>
+							<div class="top-menu__item">
+								<a href="#registration" class="top-menu__link">Регитрация</a>
+							</div>
 						</div>
-					</li>
-				</ul>
+					</div>
+				</div>
 				<form>
 					<input id="search" type="search" placeholder="Поиск">
 					<input id="submit" type="submit" value="Найти">
 				</form>
-			</nav>			
+			</nav>	
+
 		</div>
 		<div class="slider">
 			<ul>
@@ -173,7 +184,7 @@
 				</a>
 			</div>
 		</div>
-	</div>
+</div>
 	<div id="registration" class="modal">
 	  <div class="wrapper-modal">
 		<div class="div-modal">
