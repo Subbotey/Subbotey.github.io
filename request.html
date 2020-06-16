@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="MarsTerraforming">
+    <meta property="og:site_name" content="MarsTerraforming.com">
+    <meta property="og:url" content="https://subbotey.github.io">
+    <meta property="og:description" content="Команда добровольцев, планирующих преобразить Красную планету.">
+    <meta property="og:image" content="https://subbotey.github.io/img/og.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" charset="utf-8"></script>
+    <script src="js/modal.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Страница сайта с адаптивной версткой">
+    <link rel="icon" href="img/astronaut.svg" sizes="any" type="image/svg+xml">
+    <meta name="keywords" content="Адаптивная верстка, grid">
+    <title>Подать заявку</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="header">
+            <nav>
+                <a id="logo" href="./index.html"></a>
+                <div class="top-menu">
+                    <div class="top-menu__item">
+                        <a href="./index.html" class="top-menu__link">Главная</a>
+                    </div>
+                    <div class="top-menu__item">
+                        <a href="#" class="top-menu__link">Заявка</a>
+                    </div>
+                    <div class="top-menu__item">
+                        <a href="./articles.html" class="top-menu__link">Статьи</a>
+                    </div>
+                    <div class="top-menu__item">
+                        <a href="#" class="top-menu__link">Вход</a>
+                        <div class="top-menu__sub-item top-menu__sub-item_transition_scaleY">
+                            <div class="top-menu__item">
+                                <a id="buttonAuth" class="top-menu__link">Авторизация</a>
+                            </div>
+                            <div class="top-menu__item">
+                                <a href="#registration" class="top-menu__link">Регитрация</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <input id="search" type="search" placeholder="Поиск">
+                    <input id="submit" type="submit" value="Найти">
+                </form>
+            </nav>
+
+        </div>
+        <div class="slider" id="slider">
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="zagolovok">Опросный лист космонавта</div>
+                <p>
+                    Для зачисления в команду по терраформированию, отправляющуюся на Марс, Вам необходимо указать личные данные.
+                </p>
+                <div>
+                <form class="form_opros">
+                    <fieldset>
+                        <legend>
+                            Личные данные
+                        </legend>
+                        <div>
+                            <b>ФИО:</b>
+                        </div>
+                        <label>
+                            Ваше ФИО:
+                            <input name="name" type="text" placeholder="ФИО" required minlength="5" maxlength="150">
+                        </label>
+                        <br />
+                        <br />
+                        <div>
+                            <b>Ваш пол:</b>
+                        </div>
+                        <label>
+                            Мужской
+                            <input name="gender" type="radio" value="m" required>
+                        </label>
+                        <label>
+                            Женский
+                            <input name="gender" type="radio" value="f" required>
+                        </label>
+                        <br />
+                        <br />
+                        <div>
+                            <b>Дата рождения:</b>
+                        </div>
+                        <label>
+                            Укажите дату:
+                            <input name="date" type="date" required>
+                        </label>
+                        <br />
+                        <br />
+                        <div>
+                            <b>Ваше фото:</b>
+                        </div>
+                        <label>
+                            Выберите вашу фотографию
+                            <input name="foto" type="file" accept="image/*" required>
+                        </label>
+                        <br />
+                        <br />
+                        <div>
+                            <b>Ваши параметры:</b>
+                        </div>
+                        <div>
+                            <label>
+                                Вес:
+                                <input name="ves" type="text" placeholder="Вес" required minlength="1" maxlength="3">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                Рост:
+                                <input name="rost" type="text" placeholder="Рост" required minlength="2" maxlength="3">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                Размер ноги:
+                                <input name="razmer_nog" type="text" placeholder="Размер" required>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <br />
+                    <fieldset>
+                        <legend>
+                            Специализация
+                        </legend>
+                        <div>
+                            <b>Выберите желаемую специальность:</b>
+                        </div>
+                        <div>
+                            <label>
+                                Сварщик
+                                <input name="spec" type="checkbox" value="svarshik">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                Повар
+                                <input name="spec" type="checkbox" value="povar">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                Слесарь
+                                <input name="spec" type="checkbox" value="slesar">
+                            </label>
+                        </div>
+                    </fieldset>
+                    <br />
+                    <button class="knopka">Отправить</button>
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-block">
+            <div class="cards">
+                <div class="zagolovok">MAVEN на орбите Марса</div>
+                <div>
+                    17 июня исполнилось 1000 дней пребывания спутника MAVEN на орбите Марса. С тех пор ему удалось совершить ряд важных открытий, касающихся верхних слоев атмосферы этой планеты и ее взаимодействии с Солнцем и солнечным ветром.
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright © 2020. MarsTerraforming. Разработка Subbotey</p>
+        </footer>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <div class="menu__box">
+                <div><a class="menu__item" href="./index.html">Главная</a></div>
+                <div><a class="menu__item" href="#">Заявка</a></div>
+                <div><a class="menu__item" href="./articles.html">Статьи</a></div>
+                <div><a id="buttonAuth2" class="menu__item" href="#">Авторизация</a></div>
+                <div><a class="menu__item" href="#registration">Регистрация</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="authorization">
+    </div>
+    <!-- <div id="registration" class="modal">
+        <div class="wrapper-modal">
+            <div class="div-modal">
+                <div class="pole">
+                    <div class="zagolovok">
+                        Регистрация
+                    </div>
+                    <div>
+                        <label class="label">Введите ваш логин:
+                            <input class="input-modal" type="text" required placeholder="Login" minlength="5" maxlength="25"> *
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label">Введите ваш E-Mail:
+                            <input class="input-modal" type="email" required placeholder="Email"> *
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label">Введите ваш пароль:
+                            <input class="input-modal" type="password" required placeholder="Password" minlength="5" maxlength="25"> *
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label">Повиторите ваш пароль:
+                            <input class="input-modal" type="password" required placeholder="Confirm password" minlength="5" maxlength="25"> *
+                        </label>
+                    </div>
+                    <div>
+                        <input class="button-modal" type="submit" value="Регистрация">
+                        <input class="button-modal" type="button" onClick="location.href='#'" value="Отмена">
+                    </div>
+                    <div class="label" align="left">
+                        Поля со "*" обязательны для заполнения.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script>
+        let slider = new Slider("slider");
+
+        slider.add('img/slider/slide_1.jpg');
+        slider.add('img/slider/slide_2.jpg');
+        slider.add('img/slider/slide_3.jpg');
+        slider.add('img/slider/slide_4.jpg');
+        slider.add('img/slider/slide_5.jpg');
+        slider.add('img/slider/slide_6.jpg');
+
+        slider.run();
+    </script>
+
+</body>
+
+</html>

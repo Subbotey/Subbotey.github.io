@@ -8,11 +8,13 @@
 	<meta property="og:description" content="Команда добровольцев, планирующих преобразить Красную планету.">
 	<meta property="og:image" content="https://subbotey.github.io/img/og.jpg">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js" charset="utf-8"></script>
+	<script src="js/modal.js" charset="utf-8"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="discription" content="Страница сайта с адаптивной версткой">
 <link rel="icon" href="img/astronaut.svg" sizes="any" type="image/svg+xml">
 	<meta name="keywords" content="Адаптивная верстка, grid">
-<title>Главная страница адаптивного сайта</title>
+<title>Главная</title>
 </head>
 <body>
 	<div class="conteiner">
@@ -24,16 +26,16 @@
 						<a href="#" class="top-menu__link">Главная</a>
 					</div>
 					<div class="top-menu__item">
-						<a href="#" class="top-menu__link">Заявка</a>
+						<a href="./request.html" class="top-menu__link">Заявка</a>
 					</div>
 					<div class="top-menu__item">
-						<a href="#" class="top-menu__link">Статьи</a>
+						<a href="./articles.html" class="top-menu__link">Статьи</a>
 					</div>
 					<div class="top-menu__item">
 						<a href="#" class="top-menu__link">Вход</a>
 						<div class="top-menu__sub-item top-menu__sub-item_transition_scaleY">
 							<div class="top-menu__item">
-								<a href="#avtorization" class="top-menu__link">Авторизация</a>
+								<a id="buttonAuth" class="top-menu__link">Авторизация</a>
 							</div>
 							<div class="top-menu__item">
 								<a href="#registration" class="top-menu__link">Регитрация</a>
@@ -45,18 +47,10 @@
 					<input id="search" type="search" placeholder="Поиск">
 					<input id="submit" type="submit" value="Найти">
 				</form>
-			</nav>	
+			</nav>
 
 		</div>
-		<div class="slider">
-			<ul>
-				<li class="active"><img src="img/slider/slide_1.jpg" alt="Космос"></li>
-				<li><img src="img/slider/slide_2.jpg" alt="Космос"></li>
-				<li><img src="img/slider/slide_3.jpg" alt="Космос"></li>
-				<li><img src="img/slider/slide_4.jpg" alt="Космос"></li>
-				<li><img src="img/slider/slide_5.jpg" alt="Космос"></li>
-				<li><img src="img/slider/slide_6.jpg" alt="Космос"></li>
-			</ul>
+		<div class="slider" id="slider">
 		</div>
 		<div class="main">
 			<div class="cards">
@@ -116,7 +110,7 @@
 					Как бы то ни было, вопрос терраформирования Марса намного глубже, чем просто решение вопроса о прогреве и увлажнении планеты. Марсианский грунт беден на питательные вещества и богат персульфидами и перхлоратами, а значит, земные бактерии могут попросту не прижиться в нем. Что, если в ходе экспедиции Маска колонисты обнаружат на Марсе собственные бактерии, которые будут уничтожены в результате терраформирования и, таким образом, уникальный образец ксенобиокультуры будет утерян? Ученые полагают, что серьезные дебаты и планы об освоении планеты можно будет строить только тогда, когда человек впервые вступит на Красную планету и сможет исследовать ее самостоятельно, не прибегая к зондам и спутникам.
 				</div>
 				<div>
-					По этой причине мы собираем команду добровольцев, которые отважатся на полет в одну сторону и приступят к выполнению этой сложной задачи! Если вы один из них, предлагаем вам заполнить <a href="#">анкету</a> и присоединиться к нашей миссии.
+					По этой причине мы собираем команду добровольцев, которые отважатся на полет в одну сторону и приступят к выполнению этой сложной задачи! Если вы один из них, предлагаем вам заполнить <a href="./request.html">анкету</a> и присоединиться к нашей миссии.
 				</div>
 			</div>
 		</div>
@@ -138,54 +132,17 @@
 			</label>
 			<div class="menu__box">
 				<div><a class="menu__item" href="#">Главная</a></div>
-				<div><a class="menu__item" href="#">Заявка</a></div>
-				<div><a class="menu__item" href="#">Статьи</a></div>
-				<div><a class="menu__item" href="#avtorization">Авторизация</a></div>
+				<div><a class="menu__item" href="./request.html">Заявка</a></div>
+				<div><a class="menu__item" href="./articles.html">Статьи</a></div>
+				<div><a id="buttonAuth2" class="menu__item" href="#">Авторизация</a></div>
 				<div><a class="menu__item" href="#registration">Регистрация</a></div>
 			</div>
 		</div>
 	</div>
-	<div id="avtorization" class="modal">
-		<div class="wrapper-modal">
-			<div class="div-modal">
-			  <div class="pole">
-				<div class="zagolovok">
-				  Авторизация
-				</div>
-				<div>
-				  <label class="label">Ваш логин:
-					<input 
-						   class="input-modal" 
-						   type="email" 
-						   required 
-						   placeholder="Login">
-				  </label>
-				</div>
-				<div>
-				  <label class="label">Ваш пароль:
-					<input 
-						   class="input-modal" 
-						   type="password" 
-						   required 
-						   placeholder="Password">
-				  </label>
-				</div>
-				<div>
-					<input 
-						   class="button-modal" 
-						   type="submit" 
-						   value="Войти">
-				</div>
-			  </div>
-				<a class="close" href="#">
-					<button>
-						&#10008;
-					</button>
-				</a>
-			</div>
-		</div>
-</div>
-	<div id="registration" class="modal">
+	<div id="authorization">
+
+	</div>
+	<!-- <div id="registration">
 	  <div class="wrapper-modal">
 		<div class="div-modal">
 		  <div class="pole">
@@ -194,55 +151,55 @@
 			</div>
 			<div>
 			  <label class="label">Введите ваш логин:
-				<input 
-					   class="input-modal" 
-					   type="text" 
-					   required 
-					   placeholder="Login" 
-					   minlength="5" 
-					   maxlength="25"> * 
+				<input
+					   class="input-modal"
+					   type="text"
+					   required
+					   placeholder="Login"
+					   minlength="5"
+					   maxlength="25"> *
 			  </label>
 			</div>
 			<div>
 			  <label class="label">Введите ваш E-Mail:
-				<input 
-					   class="input-modal" 
-					   type="email" 
-					   required 
+				<input
+					   class="input-modal"
+					   type="email"
+					   required
 					   placeholder="Email"> *
 			  </label>
 			</div>
 			<div>
 			  <label class="label">Введите ваш пароль:
-				<input 
-					   class="input-modal" 
-					   type="password" 
-					   required 
-					   placeholder="Password" 
-					   minlength="5" 
+				<input
+					   class="input-modal"
+					   type="password"
+					   required
+					   placeholder="Password"
+					   minlength="5"
 					   maxlength="25"> *
 			  </label>
 			</div>
 			<div>
 			  <label class="label">Повиторите ваш пароль:
-				<input 
-					   class="input-modal" 
-					   type="password" 
-					   required 
-					   placeholder="Confirm password" 
-					   minlength="5" 
+				<input
+					   class="input-modal"
+					   type="password"
+					   required
+					   placeholder="Confirm password"
+					   minlength="5"
 					   maxlength="25"> *
 			  </label>
 			</div>
 			<div>
-			  <input 
-					 class="button-modal" 
-					 type="submit" 
+			  <input
+					 class="button-modal"
+					 type="submit"
 					 value="Регистрация">
-			  <input 
-					 class="button-modal" 
-					 type="button" 
-					 onClick="location.href='#'" 
+			  <input
+					 class="button-modal"
+					 type="button"
+					 onClick="location.href='#'"
 					 value="Отмена" >
 			</div>
 			<div class="label" align="left">
@@ -251,7 +208,19 @@
 		  </div>
 		</div>
 	  </div>
-	</div>
+	</div> -->
+	<script>
+		let slider = new Slider("slider");
+
+		slider.add('img/slider/slide_1.jpg');
+		slider.add('img/slider/slide_2.jpg');
+		slider.add('img/slider/slide_3.jpg');
+		slider.add('img/slider/slide_4.jpg');
+		slider.add('img/slider/slide_5.jpg');
+		slider.add('img/slider/slide_6.jpg');
+
+		slider.run();
+	</script>
+
 </body>
 </html>
-	
